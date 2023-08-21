@@ -1,0 +1,132 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom, rgb(105, 172, 96), white, rgb(92, 158, 160), green);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f4b400;
+}
+
+section {
+    padding: 2rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.project p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.project a {
+    color: #f4b400;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.skill {
+    flex: 0 0 calc(33.33% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.02);
+}
+
+.skill p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-bar {
+    height: 8px;
+    background-color: #f4b400;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.8s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    nav li {
+        margin: 0 0.5rem;
+    }
+    .project {
+        padding: 1rem;
+    }
+    .skill {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
